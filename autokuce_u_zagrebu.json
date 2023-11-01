@@ -1,1 +1,437 @@
-[{"dealership_name":"DaCar automobili","working_hours":[{"days" : "MON-FRI", "open_time" : "09:00:00", "closing_time" : "18:00:00"}, {"days" : "SAT", "open_time" : "09:00:00", "closing_time" : "14:00:00"}, {"days" : "SUN", "open_time" : null, "closing_time" : null}],"cars":[{"brand" : "Volkswagen", "car_name" : "Golf 8", "price_eruo" : 27453.56}, {"brand" : "BMW", "car_name" : "X4 M", "price_eruo" : 90340.00}, {"brand" : "BMW", "car_name" : "8 Series Gran Coupe", "price_eruo" : 90340.00}],"phone_number":"+385 1 388 8866","email":"info@dacar.hr","address":"Ul. Roberta Frangeša Mihanovića 11, 10000, Zagreb"}, {"dealership_name":"Autoland","working_hours":[{"days" : "MON-FRI", "open_time" : "09:00:00", "closing_time" : "17:00:00"}, {"days" : "SAT", "open_time" : "09:00:00", "closing_time" : "13:00:00"}, {"days" : "SUN", "open_time" : null, "closing_time" : null}],"cars":[{"brand" : "Audi", "car_name" : "e-tron GT", "price_eruo" : 114538.00}, {"brand" : "BMW", "car_name" : "8 Series Gran Coupe", "price_eruo" : 90340.00}, {"brand" : "Mercedes-Benz", "car_name" : "C-Class", "price_eruo" : 71300.00}],"phone_number":"+385 98 278 465","email":"tomislav.landeka@gmail.com","address":"Ul. Vijenac Frane Gotovca, 10000, Zagreb"}, {"dealership_name":"Auto Centar Roca d.o.o","working_hours":[{"days" : "MON-FRI", "open_time" : "07:00:00", "closing_time" : "21:00:00"}, {"days" : "SAT", "open_time" : "08:00:00", "closing_time" : "13:00:00"}, {"days" : "SUN", "open_time" : null, "closing_time" : null}],"cars":[{"brand" : "Volkswagen", "car_name" : "Golf 8", "price_eruo" : 27453.56}, {"brand" : "Volkswagen", "car_name" : "Arteon", "price_eruo" : 41476.42}, {"brand" : "Renault", "car_name" : "Megane", "price_eruo" : 25790.00}, {"brand" : "Renault", "car_name" : "Clio 5", "price_eruo" : 16790.00}],"phone_number":"+385 1 619 4140","email":"info@roca.hr","address":"Zagrebačka avenija 1, 10000, Zagreb"}, {"dealership_name":"Auto Pleter d.o.o.","working_hours":[{"days" : "MON-FRI", "open_time" : "08:00:00", "closing_time" : "17:00:00"}, {"days" : "SAT", "open_time" : "09:00:00", "closing_time" : "14:00:00"}, {"days" : "SUN", "open_time" : null, "closing_time" : null}],"cars":[{"brand" : "Volkswagen", "car_name" : "Golf 8", "price_eruo" : 27453.56}, {"brand" : "Volkswagen", "car_name" : "Arteon", "price_eruo" : 41476.42}, {"brand" : "Mercedes-Benz", "car_name" : "C-Class", "price_eruo" : 71300.00}],"phone_number":"+385 99 617 1333","email":"autopleter@autopleter.hr","address":"Bednjanska ul. 2, 10000, Zagreb"}, {"dealership_name":"Autoto","working_hours":[{"days" : "MON-FRI", "open_time" : "08:00:00", "closing_time" : "18:00:00"}, {"days" : "SAT", "open_time" : "08:00:00", "closing_time" : "13:00:00"}, {"days" : "SUN", "open_time" : null, "closing_time" : null}],"cars":[{"brand" : "Volkswagen", "car_name" : "Arteon", "price_eruo" : 41476.42}, {"brand" : "Audi", "car_name" : "A3", "price_eruo" : 26591.00}, {"brand" : "Audi", "car_name" : "e-tron GT", "price_eruo" : 114538.00}, {"brand" : "Mercedes-Benz", "car_name" : "C-Class", "price_eruo" : 71300.00}],"phone_number":"+385 95 4445 300","email":"info@autoto.hr","address":"Ljubljanska avenija 4, 10090, Zagreb"}, {"dealership_name":"GT Automobili d.o.o","working_hours":[{"days" : "MON-FRI", "open_time" : "08:00:00", "closing_time" : "17:00:00"}, {"days" : "SAT", "open_time" : "08:30:00", "closing_time" : "13:00:00"}, {"days" : "SUN", "open_time" : null, "closing_time" : null}],"cars":[{"brand" : "Volkswagen", "car_name" : "Golf 8", "price_eruo" : 27453.56}, {"brand" : "Volkswagen", "car_name" : "Arteon", "price_eruo" : 41476.42}, {"brand" : "BMW", "car_name" : "8 Series Gran Coupe", "price_eruo" : 90340.00}, {"brand" : "Renault", "car_name" : "Megane", "price_eruo" : 25790.00}],"phone_number":"+385 1 622 7270","email":"gt-automobili@gt-automobili.hr","address":"Martićeva ul. 71, 10000, Zagreb"}, {"dealership_name":"Info Max Cars d.o.o","working_hours":[{"days" : "MON-FRI", "open_time" : "09:00:00", "closing_time" : "17:00:00"}, {"days" : "SAT", "open_time" : "09:00:00", "closing_time" : "13:00:00"}, {"days" : "SUN", "open_time" : null, "closing_time" : null}],"cars":[{"brand" : "Audi", "car_name" : "e-tron GT", "price_eruo" : 114538.00}, {"brand" : "Audi", "car_name" : "RS 7 Sportback", "price_eruo" : 90340.00}, {"brand" : "BMW", "car_name" : "X4 M", "price_eruo" : 90340.00}, {"brand" : "BMW", "car_name" : "8 Series Gran Coupe", "price_eruo" : 90340.00}],"phone_number":"+385 95 527 5550","email":"info@maxcars.hr","address":"Lanište 26, 10020, Zagreb"}, {"dealership_name":"AS Centar Automobili","working_hours":[{"days" : "MON-FRI", "open_time" : "09:00:00", "closing_time" : "17:00:00"}, {"days" : "SAT", "open_time" : "09:00:00", "closing_time" : "14:00:00"}, {"days" : "SUN", "open_time" : null, "closing_time" : null}],"cars":[{"brand" : "Audi", "car_name" : "A3", "price_eruo" : 26591.00}, {"brand" : "Audi", "car_name" : "RS 7 Sportback", "price_eruo" : 90340.00}, {"brand" : "Renault", "car_name" : "Megane", "price_eruo" : 25790.00}, {"brand" : "Mercedes-Benz", "car_name" : "C-Class", "price_eruo" : 71300.00}],"phone_number":"+385 99 600 1741","email":"info@as-centar.hr","address":"Samoborska cesta 233, 10000, Zagreb"}, {"dealership_name":"Auto salon Ivic Cars","working_hours":[{"days" : "MON-FRI", "open_time" : "09:00:00", "closing_time" : "18:00:00"}, {"days" : "SAT", "open_time" : "09:00:00", "closing_time" : "14:00:00"}, {"days" : "SUN", "open_time" : null, "closing_time" : null}],"cars":[{"brand" : "Volkswagen", "car_name" : "Golf 8", "price_eruo" : 27453.56}, {"brand" : "Audi", "car_name" : "A3", "price_eruo" : 26591.00}, {"brand" : "Audi", "car_name" : "e-tron GT", "price_eruo" : 114538.00}, {"brand" : "Renault", "car_name" : "Clio 5", "price_eruo" : 16790.00}],"phone_number":"+385 92 326 8802","email":null,"address":"Samoborska cesta 241, 10000, Zagreb"}, {"dealership_name":"Tehel Automobili","working_hours":[{"days" : "MON-FRI", "open_time" : "09:00:00", "closing_time" : "18:00:00"}, {"days" : "SAT", "open_time" : "09:00:00", "closing_time" : "13:00:00"}, {"days" : "SUN", "open_time" : null, "closing_time" : null}],"cars":[{"brand" : "Volkswagen", "car_name" : "Golf 8", "price_eruo" : 27453.56}, {"brand" : "Audi", "car_name" : "A3", "price_eruo" : 26591.00}, {"brand" : "Renault", "car_name" : "Megane", "price_eruo" : 25790.00}, {"brand" : "Renault", "car_name" : "Clio 5", "price_eruo" : 16790.00}],"phone_number":"+385 91 255 5888","email":"info@tehel.hr","address":"Radnička cesta 184, 10000, Zagreb"}]
+[
+    {
+        "dealership_name": "DaCar automobili",
+        "working_hours": [
+            {
+                "days": "MON-FRI",
+                "open_time": "09:00:00",
+                "closing_time": "18:00:00"
+            },
+            {
+                "days": "SAT",
+                "open_time": "09:00:00",
+                "closing_time": "14:00:00"
+            },
+            {
+                "days": "SUN",
+                "open_time": null,
+                "closing_time": null
+            }
+        ],
+        "cars": [
+            {
+                "brand": "Volkswagen",
+                "car_name": "Golf 8",
+                "price_eruo": 27453.56
+            },
+            {
+                "brand": "BMW",
+                "car_name": "X4 M",
+                "price_eruo": 90340
+            },
+            {
+                "brand": "BMW",
+                "car_name": "8 Series Gran Coupe",
+                "price_eruo": 90340
+            }
+        ],
+        "phone_number": "+385 1 388 8866",
+        "email": "info@dacar.hr",
+        "address": "Ul. Roberta Frangeša Mihanovića 11, 10000, Zagreb"
+    },
+    {
+        "dealership_name": "Autoland",
+        "working_hours": [
+            {
+                "days": "MON-FRI",
+                "open_time": "09:00:00",
+                "closing_time": "17:00:00"
+            },
+            {
+                "days": "SAT",
+                "open_time": "09:00:00",
+                "closing_time": "13:00:00"
+            },
+            {
+                "days": "SUN",
+                "open_time": null,
+                "closing_time": null
+            }
+        ],
+        "cars": [
+            {
+                "brand": "Audi",
+                "car_name": "e-tron GT",
+                "price_eruo": 114538
+            },
+            {
+                "brand": "BMW",
+                "car_name": "8 Series Gran Coupe",
+                "price_eruo": 90340
+            },
+            {
+                "brand": "Mercedes-Benz",
+                "car_name": "C-Class",
+                "price_eruo": 71300
+            }
+        ],
+        "phone_number": "+385 98 278 465",
+        "email": "tomislav.landeka@gmail.com",
+        "address": "Ul. Vijenac Frane Gotovca, 10000, Zagreb"
+    },
+    {
+        "dealership_name": "Auto Centar Roca d.o.o",
+        "working_hours": [
+            {
+                "days": "MON-FRI",
+                "open_time": "07:00:00",
+                "closing_time": "21:00:00"
+            },
+            {
+                "days": "SAT",
+                "open_time": "08:00:00",
+                "closing_time": "13:00:00"
+            },
+            {
+                "days": "SUN",
+                "open_time": null,
+                "closing_time": null
+            }
+        ],
+        "cars": [
+            {
+                "brand": "Volkswagen",
+                "car_name": "Golf 8",
+                "price_eruo": 27453.56
+            },
+            {
+                "brand": "Volkswagen",
+                "car_name": "Arteon",
+                "price_eruo": 41476.42
+            },
+            {
+                "brand": "Renault",
+                "car_name": "Megane",
+                "price_eruo": 25790
+            },
+            {
+                "brand": "Renault",
+                "car_name": "Clio 5",
+                "price_eruo": 16790
+            }
+        ],
+        "phone_number": "+385 1 619 4140",
+        "email": "info@roca.hr",
+        "address": "Zagrebačka avenija 1, 10000, Zagreb"
+    },
+    {
+        "dealership_name": "Auto Pleter d.o.o.",
+        "working_hours": [
+            {
+                "days": "MON-FRI",
+                "open_time": "08:00:00",
+                "closing_time": "17:00:00"
+            },
+            {
+                "days": "SAT",
+                "open_time": "09:00:00",
+                "closing_time": "14:00:00"
+            },
+            {
+                "days": "SUN",
+                "open_time": null,
+                "closing_time": null
+            }
+        ],
+        "cars": [
+            {
+                "brand": "Volkswagen",
+                "car_name": "Golf 8",
+                "price_eruo": 27453.56
+            },
+            {
+                "brand": "Volkswagen",
+                "car_name": "Arteon",
+                "price_eruo": 41476.42
+            },
+            {
+                "brand": "Mercedes-Benz",
+                "car_name": "C-Class",
+                "price_eruo": 71300
+            }
+        ],
+        "phone_number": "+385 99 617 1333",
+        "email": "autopleter@autopleter.hr",
+        "address": "Bednjanska ul. 2, 10000, Zagreb"
+    },
+    {
+        "dealership_name": "Autoto",
+        "working_hours": [
+            {
+                "days": "MON-FRI",
+                "open_time": "08:00:00",
+                "closing_time": "18:00:00"
+            },
+            {
+                "days": "SAT",
+                "open_time": "08:00:00",
+                "closing_time": "13:00:00"
+            },
+            {
+                "days": "SUN",
+                "open_time": null,
+                "closing_time": null
+            }
+        ],
+        "cars": [
+            {
+                "brand": "Volkswagen",
+                "car_name": "Arteon",
+                "price_eruo": 41476.42
+            },
+            {
+                "brand": "Audi",
+                "car_name": "A3",
+                "price_eruo": 26591
+            },
+            {
+                "brand": "Audi",
+                "car_name": "e-tron GT",
+                "price_eruo": 114538
+            },
+            {
+                "brand": "Mercedes-Benz",
+                "car_name": "C-Class",
+                "price_eruo": 71300
+            }
+        ],
+        "phone_number": "+385 95 4445 300",
+        "email": "info@autoto.hr",
+        "address": "Ljubljanska avenija 4, 10090, Zagreb"
+    },
+    {
+        "dealership_name": "GT Automobili d.o.o",
+        "working_hours": [
+            {
+                "days": "MON-FRI",
+                "open_time": "08:00:00",
+                "closing_time": "17:00:00"
+            },
+            {
+                "days": "SAT",
+                "open_time": "08:30:00",
+                "closing_time": "13:00:00"
+            },
+            {
+                "days": "SUN",
+                "open_time": null,
+                "closing_time": null
+            }
+        ],
+        "cars": [
+            {
+                "brand": "Volkswagen",
+                "car_name": "Golf 8",
+                "price_eruo": 27453.56
+            },
+            {
+                "brand": "Volkswagen",
+                "car_name": "Arteon",
+                "price_eruo": 41476.42
+            },
+            {
+                "brand": "BMW",
+                "car_name": "8 Series Gran Coupe",
+                "price_eruo": 90340
+            },
+            {
+                "brand": "Renault",
+                "car_name": "Megane",
+                "price_eruo": 25790
+            }
+        ],
+        "phone_number": "+385 1 622 7270",
+        "email": "gt-automobili@gt-automobili.hr",
+        "address": "Martićeva ul. 71, 10000, Zagreb"
+    },
+    {
+        "dealership_name": "Info Max Cars d.o.o",
+        "working_hours": [
+            {
+                "days": "MON-FRI",
+                "open_time": "09:00:00",
+                "closing_time": "17:00:00"
+            },
+            {
+                "days": "SAT",
+                "open_time": "09:00:00",
+                "closing_time": "13:00:00"
+            },
+            {
+                "days": "SUN",
+                "open_time": null,
+                "closing_time": null
+            }
+        ],
+        "cars": [
+            {
+                "brand": "Audi",
+                "car_name": "e-tron GT",
+                "price_eruo": 114538
+            },
+            {
+                "brand": "Audi",
+                "car_name": "RS 7 Sportback",
+                "price_eruo": 90340
+            },
+            {
+                "brand": "BMW",
+                "car_name": "X4 M",
+                "price_eruo": 90340
+            },
+            {
+                "brand": "BMW",
+                "car_name": "8 Series Gran Coupe",
+                "price_eruo": 90340
+            }
+        ],
+        "phone_number": "+385 95 527 5550",
+        "email": "info@maxcars.hr",
+        "address": "Lanište 26, 10020, Zagreb"
+    },
+    {
+        "dealership_name": "AS Centar Automobili",
+        "working_hours": [
+            {
+                "days": "MON-FRI",
+                "open_time": "09:00:00",
+                "closing_time": "17:00:00"
+            },
+            {
+                "days": "SAT",
+                "open_time": "09:00:00",
+                "closing_time": "14:00:00"
+            },
+            {
+                "days": "SUN",
+                "open_time": null,
+                "closing_time": null
+            }
+        ],
+        "cars": [
+            {
+                "brand": "Audi",
+                "car_name": "A3",
+                "price_eruo": 26591
+            },
+            {
+                "brand": "Audi",
+                "car_name": "RS 7 Sportback",
+                "price_eruo": 90340
+            },
+            {
+                "brand": "Renault",
+                "car_name": "Megane",
+                "price_eruo": 25790
+            },
+            {
+                "brand": "Mercedes-Benz",
+                "car_name": "C-Class",
+                "price_eruo": 71300
+            }
+        ],
+        "phone_number": "+385 99 600 1741",
+        "email": "info@as-centar.hr",
+        "address": "Samoborska cesta 233, 10000, Zagreb"
+    },
+    {
+        "dealership_name": "Auto salon Ivic Cars",
+        "working_hours": [
+            {
+                "days": "MON-FRI",
+                "open_time": "09:00:00",
+                "closing_time": "18:00:00"
+            },
+            {
+                "days": "SAT",
+                "open_time": "09:00:00",
+                "closing_time": "14:00:00"
+            },
+            {
+                "days": "SUN",
+                "open_time": null,
+                "closing_time": null
+            }
+        ],
+        "cars": [
+            {
+                "brand": "Volkswagen",
+                "car_name": "Golf 8",
+                "price_eruo": 27453.56
+            },
+            {
+                "brand": "Audi",
+                "car_name": "A3",
+                "price_eruo": 26591
+            },
+            {
+                "brand": "Audi",
+                "car_name": "e-tron GT",
+                "price_eruo": 114538
+            },
+            {
+                "brand": "Renault",
+                "car_name": "Clio 5",
+                "price_eruo": 16790
+            }
+        ],
+        "phone_number": "+385 92 326 8802",
+        "email": null,
+        "address": "Samoborska cesta 241, 10000, Zagreb"
+    },
+    {
+        "dealership_name": "Tehel Automobili",
+        "working_hours": [
+            {
+                "days": "MON-FRI",
+                "open_time": "09:00:00",
+                "closing_time": "18:00:00"
+            },
+            {
+                "days": "SAT",
+                "open_time": "09:00:00",
+                "closing_time": "13:00:00"
+            },
+            {
+                "days": "SUN",
+                "open_time": null,
+                "closing_time": null
+            }
+        ],
+        "cars": [
+            {
+                "brand": "Volkswagen",
+                "car_name": "Golf 8",
+                "price_eruo": 27453.56
+            },
+            {
+                "brand": "Audi",
+                "car_name": "A3",
+                "price_eruo": 26591
+            },
+            {
+                "brand": "Renault",
+                "car_name": "Megane",
+                "price_eruo": 25790
+            },
+            {
+                "brand": "Renault",
+                "car_name": "Clio 5",
+                "price_eruo": 16790
+            }
+        ],
+        "phone_number": "+385 91 255 5888",
+        "email": "info@tehel.hr",
+        "address": "Radnička cesta 184, 10000, Zagreb"
+    }
+]
