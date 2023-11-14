@@ -1,0 +1,118 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "https://github.com/franl43/or_lab1/blob/main/schema.json",
+    "type": "array",
+    "default": [],
+    "title": "Auto kuće u Zagrebu",
+    "items": {
+        "type": "object",
+        "title": "Auto kuća",
+        "description": "Objekt koji sadrži sve podatke o jednoj auto kući.",
+        "required": [
+            "dealership_name",
+            "working_hours",
+            "cars",
+            "phone_number",
+            "email",
+            "address"
+        ],
+        "properties": {
+            "dealership_name": {
+                "type": "string",
+                "title": "naziv auto kuće",
+                "description": "Naziv auto kuće."
+            },
+            "working_hours": {
+                "type": "array",
+                "title": "radna vremena",
+                "description": "Skup radnih vremena auto kuće.",
+                "items": {
+                    "type": "object",
+                    "title": "radno vrijeme",
+                    "description": "Objekt koji sadrži sve podatke o radnom vremenu auto kuće.",
+                    "required": [
+                        "days",
+                        "open_time",
+                        "closing_time"
+                    ],
+                    "properties": {
+                        "days": {
+                            "type": "string",
+                            "title": "dani u tjednu",
+                            "description": "Dani u tjednu."
+                        },
+                        "open_time": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "vrijeme otvranja",
+                            "description": "Vrijeme otvaranja."
+                        },
+                        "closing_time": {
+                            "type": [
+                                "string",
+                                "null"
+                            ],
+                            "title": "vrijeme zatvaranja",
+                            "description": "Vrijeme zatvaranja."
+                        }
+                    }
+                }
+            },
+            "cars": {
+                "type": "array",
+                "title": "automobili",
+                "description": "Skup automobila koje auto kuća prodaje.",
+                "items": {
+                    "type": "object",
+                    "title": "automobil",
+                    "description": "Objekt koji sadrži sve podatke o automobilu.",
+                    "required": [
+                        "brand",
+                        "car_name",
+                        "price_eruo"
+                    ],
+                    "properties": {
+                        "brand": {
+                            "type": "string",
+                            "title": "marka",
+                            "description": "Marka automobila."
+                        },
+                        "car_name": {
+                            "type": "string",
+                            "title": "naziv automobila",
+                            "description": "Naziv automobila."
+                        },
+                        "price_euro": {
+                            "type": [
+                                "number",
+                                "integer"
+                            ],
+                            "title": "cijena automobila",
+                            "description": "Cijena automobila u eurima."
+                        }
+                    }
+                }
+            },
+            "phone_number": {
+                "type": "string",
+                "title": "broj telefona",
+                "description": "Broj telefona auto kuće."
+            },
+            "email": {
+                "type": [
+                    "string",
+                    "null"
+                ],
+                "title": "email",
+                "description": "Email auto kuće."
+            },
+            "address": {
+                "type": "string",
+                "title": "adresa",
+                "description": "Adresa auto kuće."
+            }
+        }
+    }
+}

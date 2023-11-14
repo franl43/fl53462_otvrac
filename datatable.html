@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Fran Laić">
+    <meta name="description" content="Popis auto kuća u Zagrebu, njihovo radno vrijeme, popis automobila koje prodaju, kontakt podatke: broj telefona, email te adresu auto kuće. Za svaki automobil kojega auto kuća prodaje navedena je marka auomobila, model automobila te njegova cijena u eurima.">
+    <meta name="license" content="CC0 1.0 Universal">
+    <meta name="version" content="1.0">
+    <meta name="language" content="hrvatski">
+    <meta name="format-datetime" content="hh:mm:ss (ISO 8601)">
+    <meta name="available-formats" content="CSV, JSON">
+    <meta name="published" content="studeni 2023.">
+    <meta name="last-updated" content="studeni 2023.">
+    <meta name="keywords" content="auto kuća, automobil, Zagreb">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="client/public/styles/style.css">
+    <title>Auto kuće u Zagrebu</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Auto kuće u Zagrebu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="datatable.html">View data</a>
+        </div>
+        </div>
+    </nav>
+    <div class="d-flex flex-column justify-content-center align-items-center w-100 m-2">
+        <form id="myForm" class="w-75">
+            <label for="filter">Polje za pretragu</label>
+            <input type="text" class="form-control" id="filter" placeholder="Unesite vrijednost">
+            <select class="custom-select my-1 mr-sm-2 w-25 form-row" id="field" style="margin: 0;">
+                <option selected disabled>Odaberite polje za pretragu</option>
+                <option value="all">Sva polja (wildcard)</option>
+                <option value="dealership_name">Naziv autokuće</option>
+                <option value="brand">Brand automobila</option>
+                <option value="car_name">Naziv automobila</option>
+                <option value="address">Adresa</option>
+            </select>    
+            <button type="submit" class="btn btn-primary my-1">Pretraži</button>
+          </form>
+    </div>
+    <div id="download-btns" hidden>
+        <button id="csv-but" onclick="downloadCsv()" type="button" class="btn btn-primary">autokuce_u_zagrebu_filter.csv</button>
+        <button id="json-btn" onclick="downloadJson()" type="button" class="btn btn-primary">autokuce_u_zagrebu_filter.json</button>
+    </div>
+    <div id="table" class="d-flex flex-column justify-content-center align-items-center w-100 m-0">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="client/public/js/script.js"></script>
+</body>
+</html>

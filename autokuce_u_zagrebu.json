@@ -22,17 +22,17 @@
             {
                 "brand": "Volkswagen",
                 "car_name": "Golf 8",
-                "price_eruo": 27453.56
+                "price_euro": 27453.56
             },
             {
                 "brand": "BMW",
                 "car_name": "X4 M",
-                "price_eruo": 90340
+                "price_euro": 90340
             },
             {
                 "brand": "BMW",
                 "car_name": "8 Series Gran Coupe",
-                "price_eruo": 90340
+                "price_euro": 90340
             }
         ],
         "phone_number": "+385 1 388 8866",
@@ -62,17 +62,17 @@
             {
                 "brand": "Audi",
                 "car_name": "e-tron GT",
-                "price_eruo": 114538
+                "price_euro": 114538
             },
             {
                 "brand": "BMW",
                 "car_name": "8 Series Gran Coupe",
-                "price_eruo": 90340
+                "price_euro": 90340
             },
             {
                 "brand": "Mercedes-Benz",
                 "car_name": "C-Class",
-                "price_eruo": 71300
+                "price_euro": 71300
             }
         ],
         "phone_number": "+385 98 278 465",
@@ -102,22 +102,22 @@
             {
                 "brand": "Volkswagen",
                 "car_name": "Golf 8",
-                "price_eruo": 27453.56
+                "price_euro": 27453.56
             },
             {
                 "brand": "Volkswagen",
                 "car_name": "Arteon",
-                "price_eruo": 41476.42
+                "price_euro": 41476.42
             },
             {
                 "brand": "Renault",
                 "car_name": "Megane",
-                "price_eruo": 25790
+                "price_euro": 25790
             },
             {
                 "brand": "Renault",
                 "car_name": "Clio 5",
-                "price_eruo": 16790
+                "price_euro": 16790
             }
         ],
         "phone_number": "+385 1 619 4140",
@@ -147,17 +147,17 @@
             {
                 "brand": "Volkswagen",
                 "car_name": "Golf 8",
-                "price_eruo": 27453.56
+                "price_euro": 27453.56
             },
             {
                 "brand": "Volkswagen",
                 "car_name": "Arteon",
-                "price_eruo": 41476.42
+                "price_euro": 41476.42
             },
             {
                 "brand": "Mercedes-Benz",
                 "car_name": "C-Class",
-                "price_eruo": 71300
+                "price_euro": 71300
             }
         ],
         "phone_number": "+385 99 617 1333",
@@ -187,22 +187,22 @@
             {
                 "brand": "Volkswagen",
                 "car_name": "Arteon",
-                "price_eruo": 41476.42
+                "price_euro": 41476.42
             },
             {
                 "brand": "Audi",
                 "car_name": "A3",
-                "price_eruo": 26591
+                "price_euro": 26591
             },
             {
                 "brand": "Audi",
                 "car_name": "e-tron GT",
-                "price_eruo": 114538
+                "price_euro": 114538
             },
             {
                 "brand": "Mercedes-Benz",
                 "car_name": "C-Class",
-                "price_eruo": 71300
+                "price_euro": 71300
             }
         ],
         "phone_number": "+385 95 4445 300",
@@ -232,22 +232,22 @@
             {
                 "brand": "Volkswagen",
                 "car_name": "Golf 8",
-                "price_eruo": 27453.56
+                "price_euro": 27453.56
             },
             {
                 "brand": "Volkswagen",
                 "car_name": "Arteon",
-                "price_eruo": 41476.42
+                "price_euro": 41476.42
             },
             {
                 "brand": "BMW",
                 "car_name": "8 Series Gran Coupe",
-                "price_eruo": 90340
+                "price_euro": 90340
             },
             {
                 "brand": "Renault",
                 "car_name": "Megane",
-                "price_eruo": 25790
+                "price_euro": 25790
             }
         ],
         "phone_number": "+385 1 622 7270",
@@ -277,22 +277,22 @@
             {
                 "brand": "Audi",
                 "car_name": "e-tron GT",
-                "price_eruo": 114538
+                "price_euro": 114538
             },
             {
                 "brand": "Audi",
                 "car_name": "RS 7 Sportback",
-                "price_eruo": 90340
+                "price_euro": 90340
             },
             {
                 "brand": "BMW",
                 "car_name": "X4 M",
-                "price_eruo": 90340
+                "price_euro": 90340
             },
             {
                 "brand": "BMW",
                 "car_name": "8 Series Gran Coupe",
-                "price_eruo": 90340
+                "price_euro": 90340
             }
         ],
         "phone_number": "+385 95 527 5550",
@@ -322,22 +322,22 @@
             {
                 "brand": "Audi",
                 "car_name": "A3",
-                "price_eruo": 26591
+                "price_euro": 26591
             },
             {
                 "brand": "Audi",
                 "car_name": "RS 7 Sportback",
-                "price_eruo": 90340
+                "price_euro": 90340
             },
             {
                 "brand": "Renault",
                 "car_name": "Megane",
-                "price_eruo": 25790
+                "price_euro": 25790
             },
             {
                 "brand": "Mercedes-Benz",
                 "car_name": "C-Class",
-                "price_eruo": 71300
+                "price_euro": 71300
             }
         ],
         "phone_number": "+385 99 600 1741",
@@ -367,22 +367,22 @@
             {
                 "brand": "Volkswagen",
                 "car_name": "Golf 8",
-                "price_eruo": 27453.56
+                "price_euro": 27453.56
             },
             {
                 "brand": "Audi",
                 "car_name": "A3",
-                "price_eruo": 26591
+                "price_euro": 26591
             },
             {
                 "brand": "Audi",
                 "car_name": "e-tron GT",
-                "price_eruo": 114538
+                "price_euro": 114538
             },
             {
                 "brand": "Renault",
                 "car_name": "Clio 5",
-                "price_eruo": 16790
+                "price_euro": 16790
             }
         ],
         "phone_number": "+385 92 326 8802",
@@ -412,22 +412,22 @@
             {
                 "brand": "Volkswagen",
                 "car_name": "Golf 8",
-                "price_eruo": 27453.56
+                "price_euro": 27453.56
             },
             {
                 "brand": "Audi",
                 "car_name": "A3",
-                "price_eruo": 26591
+                "price_euro": 26591
             },
             {
                 "brand": "Renault",
                 "car_name": "Megane",
-                "price_eruo": 25790
+                "price_euro": 25790
             },
             {
                 "brand": "Renault",
                 "car_name": "Clio 5",
-                "price_eruo": 16790
+                "price_euro": 16790
             }
         ],
         "phone_number": "+385 91 255 5888",
