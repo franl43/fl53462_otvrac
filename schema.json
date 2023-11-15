@@ -71,7 +71,7 @@
                     "required": [
                         "brand",
                         "car_name",
-                        "price_eruo"
+                        "price_euro"
                     ],
                     "properties": {
                         "brand": {
