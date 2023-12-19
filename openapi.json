@@ -1,0 +1,624 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Auto kuće u Zagrebu API",
+    "description": "API za dohvat auto kuća i podataka o njima",
+    "termsOfService": "http://swagger.io/terms/",
+    "contact": {
+      "email": "fl53462@fer.hr"
+    },
+    "license": {
+      "name": "CC0 1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.en#legal-code-title"
+    },
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8081/api/v1"
+    }
+  ],
+  "paths": {
+    "/dealerships": {
+      "get": {
+        "tags": [
+          "dealership"
+        ],
+        "summary": "Fetch all dealerships",
+        "description": "Returns list of all dealerships",
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Dealership"
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Resources can't be fetched"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "dealership"
+        ],
+        "summary": "Add a new dealership",
+        "description": "Addes new dealership to database",
+        "requestBody": {
+          "description": "Create a new pet in the store",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Dealership"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful insert to database",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Dealership"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Unsuccessful insert to database"
+          },
+          "422": {
+            "description": "Invalid json in request body"
+          }
+        }
+      }
+    },
+    "/dealerships/{id}": {
+      "get": {
+        "tags": [
+          "dealership"
+        ],
+        "summary": "Fetch dealership by id",
+        "description": "Returns fetched dealership",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Id of dealership to return",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Dealership"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Resource can't be found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "dealership"
+        ],
+        "summary": "Update an existing dealership",
+        "description": "Updates an existing dealership by id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Id of dealership to update",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Update an existent dealership in database",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DealershipPUT"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Dealership"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Resource can't be found"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "dealership"
+        ],
+        "summary": "Delete a dealership",
+        "description": "Deletes a dealership",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Id of dealership to delete",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation"
+          },
+          "404": {
+            "description": "Resource can't be found"
+          }
+        }
+      }
+    },
+    "/cars": {
+      "get": {
+        "tags": [
+          "cars"
+        ],
+        "summary": "Fetch all cars",
+        "description": "Returns list of all cars in each dealership",
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CarsGET"
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Resources can't be fetched"
+          }
+        }
+      }
+    },
+    "/cars/{id}": {
+      "get": {
+        "tags": [
+          "cars"
+        ],
+        "summary": "Fetch all cars in dealership by dealership id",
+        "description": "Returns fetched cars",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Id of dealership which cars are returned",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CarsGET"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Resource can't be found"
+          }
+        }
+      }
+    },
+    "/working_hours": {
+      "get": {
+        "tags": [
+          "working hours"
+        ],
+        "summary": "Fetch all working hours",
+        "description": "Returns list of working hours for all dealerships",
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WorkingHoursGET"
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Resources can't be fetched"
+          }
+        }
+      }
+    },
+    "/working_hours/{id}": {
+      "get": {
+        "tags": [
+          "working hours"
+        ],
+        "summary": "Fetch working hours for dealership by dealership id",
+        "description": "Returns fetched working hours",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Id of dealership which working hours are returned",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WorkingHoursGET"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Resource can't be found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "working hours"
+        ],
+        "summary": "Update an existing working hours",
+        "description": "Updates an existing working hours by id",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Id of working hours to update",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Update an existent working hours in database",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkingHoursPUT"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful operation"
+          },
+          "404": {
+            "description": "Resource can't be found"
+          }
+        }
+      }
+    },
+    "/contact": {
+      "get": {
+        "tags": [
+          "contact"
+        ],
+        "summary": "Fetch all dealerships contact info",
+        "description": "Returns list of contact info for all dealerships",
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContactGET"
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Resources can't be fetched"
+          }
+        }
+      }
+    },
+    "/contact/{id}": {
+      "get": {
+        "tags": [
+          "contact"
+        ],
+        "summary": "Fetch contact info for dealership by dealership id",
+        "description": "Returns fetched contact info",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Id of dealership which contact info are returned",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContactGET"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Resource can't be found"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Dealership": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 10
+          },
+          "dealership_name": {
+            "type": "string",
+            "example": "Ime"
+          },
+          "working_hours": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WorkingHours"
+            }
+          },
+          "cars": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Car"
+            }
+          },
+          "phone_number": {
+            "type": "string",
+            "example": "+385 91 234 5678"
+          },
+          "email": {
+            "type": "string",
+            "example": "some@mail.hr"
+          },
+          "address": {
+            "type": "string",
+            "example": "Ulica, 10000, Zagreb"
+          }
+        }
+      },
+      "WorkingHours": {
+        "type": "object",
+        "properties": {
+          "wh_id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 10
+          },
+          "days": {
+            "type": "string",
+            "example": "SAT"
+          },
+          "open_time": {
+            "type": "string",
+            "example": "08:00:00"
+          },
+          "closing_time": {
+            "type": "string",
+            "example": "08:00:00"
+          }
+        }
+      },
+      "Car": {
+        "type": "object",
+        "properties": {
+          "car_id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 12
+          },
+          "brand": {
+            "type": "string",
+            "example": "Volkswagen"
+          },
+          "car_name": {
+            "type": "string",
+            "example": "Golf 8"
+          },
+          "price_euro": {
+            "type": "number",
+            "format": "float",
+            "example": 10000
+          }
+        }
+      },
+      "DealershipPUT": {
+        "type": "object",
+        "properties": {
+          "dealership_name": {
+            "type": "string",
+            "example": "Ime"
+          },
+          "phone_number": {
+            "type": "string",
+            "example": "+385 91 234 5678"
+          },
+          "email": {
+            "type": "string",
+            "example": "some@mail.hr"
+          },
+          "address": {
+            "type": "string",
+            "example": "Ulica, 10000, Zagreb"
+          }
+        }
+      },
+      "WorkingHoursGET": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 10
+          },
+          "working_hours": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/WorkingHours"
+            }
+          }
+        }
+      },
+      "WorkingHoursPUT": {
+        "type": "object",
+        "properties": {
+          "open_time": {
+            "type": "string",
+            "example": "08:00:00"
+          },
+          "closing_time": {
+            "type": "string",
+            "example": "08:00:00"
+          }
+        }
+      },
+      "CarsGET": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 10
+          },
+          "cars": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Car"
+            }
+          }
+        }
+      },
+      "ContactGET": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "example": 10
+          },
+          "phone_number": {
+            "type": "string",
+            "example": "+385 91 234 5678"
+          },
+          "email": {
+            "type": "string",
+            "example": "some@mail.hr"
+          }
+        }
+      }
+    },
+    "requestBodies": {
+      "Dealership": {
+        "description": "Dealership object that is being added",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Dealership"
+            }
+          }
+        }
+      },
+      "DealershipPUT": {
+        "description": "Object that contains delaership fields to be updated",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/DealershipPUT"
+            }
+          }
+        }
+      },
+      "WorkingHoursPUT": {
+        "description": "Object that contains working hours fields to be updated",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/WorkingHoursPUT"
+            }
+          }
+        }
+      }
+    }
+  }
+}
