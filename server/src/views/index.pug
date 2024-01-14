@@ -1,0 +1,19 @@
+extends layout.pug
+
+block navbar
+    a.nav-item.nav-link.active(href="/", title="Home") Home
+        span.sr-only (current)
+    a.nav-item.nav-link(href="/datatable" , title="View data") View data
+    if username
+        a.nav-item.nav-link(href="/logout" , title="Logout") Odjava
+    else
+        a.nav-item.nav-link(href="/login" , title="Login") Prijava
+
+block content
+    div.d-flex.flex-column.justify-content-center.align-items-start.font-weight-bold.m-2
+        p Na sljedećim poveznicama možete preuzeti podatke u CSV i JSON formatu:
+        ul
+            li
+                a(href="../../../autokuce_u_zagrebu.csv", title="autokuce_u_zagrebu.csv", download="") autokuce_u_zagrebu.csv
+            li
+                a(href="../../../autokuce_u_zagrebu.json", title="autokuce_u_zagrebu.json", download="") autokuce_u_zagrebu.json

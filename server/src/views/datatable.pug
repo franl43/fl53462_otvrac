@@ -1,0 +1,32 @@
+extends layout.pug
+
+block navbar
+    a.nav-item.nav-link(href="/", title="Home") Home
+        span.sr-only (current)
+    a.nav-item.nav-link.active(href="/datatable" , title="View data") View data
+    if username
+        a.nav-item.nav-link(href="/logout" , title="Logout") Odjava
+    else
+        a.nav-item.nav-link(href="/login" , title="Login") Prijava
+
+block content
+    div.d-flex.flex-column.justify-content-center.align-items-center.w-100.m-2
+        form#myForm.w-75
+            label(for="filter") Polje za pretragu
+            input#filter.form-control(type="text", placeholder="Unesite vrijednost")
+            select#field.custom-select.my-1.mr-sm-2.w-25.form-row(style="margin: 0;")
+                option(selected, disabled) Odaberite polje za pretragu
+                option(value="all") Sva polja (wildcard)
+                option(value="dealership_name") Naziv autokuće
+                option(value="brand") Brand automobila
+                option(value="car_name") Naziv automobila
+                option(value="address") Adresa    
+            button.btn.btn-primary.my-1(type="submit") Pretraži
+    div#download-btns(hidden)
+        button#csv-but.btn.btn-primary(onclick="downloadCsv()" type="button") autokuce_u_zagrebu_filter.csv
+        button#json-btn.btn.btn-primary(onclick="downloadJson()" type="button") autokuce_u_zagrebu_filter.json
+    div#table.d-flex.flex-column.justify-content-center.align-items-center.w-100.m-0
+
+block scripts
+    script 
+        include ../../../client/public/js/script.js

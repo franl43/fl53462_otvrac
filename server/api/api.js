@@ -193,12 +193,11 @@ app.put('/api/v1/dealerships/:id', function(req, res) {
             db.getDealershipById(id)
             .then(p => {
                 p.forEach(r => result.push(r))
-                res.json(resWrapper(200, "OK", `Dealership with id:${id} updated.`, result[0]))
-                // if(result.length == 1) {
-                //     res.json(resWrapper(200, "OK", `Dealership with id:${id} updated.`, result[0]))
-                // } else {
-                //     res.status(404).json(resWrapper(404, "Not Found", `Dealership with id:${id} doesn't exist.`, null))
-                // }
+                if(result.length == 1) {
+                    res.json(resWrapper(200, "OK", `Dealership with id:${id} updated.`, result[0]))
+                } else {
+                    res.status(404).json(resWrapper(404, "Not Found", `Dealership with id:${id} doesn't exist.`, null))
+                }
             })
         })
     } else {
@@ -230,12 +229,11 @@ app.delete('/api/v1/dealerships/:id', function(req, res) {
         db.deleteDealership(id)
         .then(p => {
             p.forEach(r => result.push(r))
-            res.json(resWrapper(200, "OK", `Dealership with id:${id} deleted.`, null))
-            // if(result.length == 1) {
-            //     res.json(resWrapper(200, "OK", `Dealership with id:${id} deleted.`, null))
-            // } else {
-            //     res.status(404).json(resWrapper(404, "Not Found", `Dealership with id:${id} doesn't exist.`, null))
-            // }
+            if(result.length == 1) {
+                res.json(resWrapper(200, "OK", `Dealership with id:${id} deleted.`, null))
+            } else {
+                res.status(404).json(resWrapper(404, "Not Found", `Dealership with id:${id} doesn't exist.`, null))
+            }
         })
     } else {
         res.status(404).json(resWrapper(404, "Not Found", `Dealership with id:${req.params.id} doesn't exist.`, null))

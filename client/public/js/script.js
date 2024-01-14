@@ -1,4 +1,4 @@
-const SERVER_URL = "http://localhost:8080";
+const SERVER_URL = "https://localhost:8080";
 
 const form = document.getElementById('myForm');
 form.addEventListener('submit', filterData);
@@ -58,21 +58,39 @@ function filterData(f) {
     }
 
     if(fields['all']) {
-        fetchFilterAll(filterWord).then(data => fillTable(data))
+        fetchFilterAll(filterWord).then(data => {
+            fillTable(data);
+            localStorage.setItem('json', JSON.stringify(data))
+        })
     } else if(fields['dealership_name']) {
-        fetchFilterDealershipName(filterWord).then(data => fillTable(data))
+        fetchFilterDealershipName(filterWord).then(data => {
+            fillTable(data);
+            localStorage.setItem('json', JSON.stringify(data))
+        })
     } else if(fields['brand']) {
-        fetchFilterBrand(filterWord).then(data => fillTable(data))
+        fetchFilterBrand(filterWord).then(data => {
+            fillTable(data);
+            localStorage.setItem('json', JSON.stringify(data))
+        })
     } else if(fields['car_name']) {
-        fetchFilterCarName(filterWord).then(data => fillTable(data))
+        fetchFilterCarName(filterWord).then(data => {
+            fillTable(data);
+            localStorage.setItem('json', JSON.stringify(data))
+        })
     } else if(fields['address']) {
-        fetchFilterAddress(filterWord).then(data => fillTable(data))
+        fetchFilterAddress(filterWord).then(data => {
+            fillTable(data);
+            localStorage.setItem('json', JSON.stringify(data))
+        })
     }else {
-        fetchAll().then(data => fillTable(data))
+        fetchAll().then(data => {
+            fillTable(data);
+            localStorage.setItem('json', JSON.stringify(data))
+        })
     }
 
     // preuzimanje jsona 
-    localStorage.setItem('json', JSON.stringify(data))
+    // localStorage.setItem('json', JSON.stringify(data))
 }
 
 async function fetchAll() {
