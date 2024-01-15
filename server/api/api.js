@@ -26,7 +26,9 @@ app.get('/api/v1/dealerships', function(req, res) {
     .then(p => {
         p.forEach(r => result.push(r))
         if(result.length > 0) {
-            res.json(resWrapper(200, "OK", `All dealerships fetched.`, result))
+            let jsonldResult = []
+            result.forEach(r => jsonldResult.push(jsonldWrapper(r)))
+            res.json(resWrapper(200, "OK", `All dealerships fetched.`, jsonldResult))
         } else {
             res.status(404).json(resWrapper(404, "Not Found", `Can't find fetched resource.`, null))
         }
@@ -42,7 +44,8 @@ app.get('/api/v1/dealerships/:id', function(req, res) {
         .then(p => {
             p.forEach(r => result.push(r))
             if(result.length == 1) {
-                res.json(resWrapper(200, "OK", `Dealership with id:${id} fetched.`, result[0]))
+                jsonldWrapper(result[0])
+                res.json(resWrapper(200, "OK", `Dealership with id:${id} fetched.`, jsonldWrapper(result[0])))
             } else {
                 res.status(404).json(resWrapper(404, "Not Found", `Dealership with id:${id} doesn't exist.`, null))
             }
@@ -171,8 +174,9 @@ app.post('/api/v1/dealerships', function(req, res) {
             p.forEach(r => result.push(r))
             let id = result.at(0)
             if(id) {
-                obj.id = id;
-                res.json(resWrapper(200, "OK", `Dealership inserted.`, obj))
+                let idObj = {id: id}
+                Object.assign(idObj, obj)
+                res.json(resWrapper(200, "OK", `Dealership inserted.`, idObj))
             } else {
                 res.status(409).json(resWrapper(409, "Conflict", "Dealership insert failed.", obj))
             }
@@ -253,6 +257,41 @@ function resWrapper(code, status, msg, response) {
         "response": response
     }
     return resp
+}
+
+function jsonldWrapper(ds) {
+    jsonld = {
+        "@context": {
+            "dealership_name": "https://schema.org/name",
+            "phone_number": "https://schema.org/telephone",
+            "email": "https://schema.org/email",
+            "address": "https://schema.org/address",
+            "open_time": "https://schema.org/opens",
+            "closing_time": "https://schema.org/closes"
+        },
+        "@type": "https://schema.org/Organization",
+        "dealership_name": ds.dealership_name
+    }
+    let whs = []
+    for(let ws of ds.working_hours) {
+        whs.push({
+            "@type": "https://schema.org/OpeningHoursSpecification",
+            "wh_id": ws.wh_id,
+            "days": ws.days,
+            "open_time": ws.open_time,
+            "closing_time": ws.closing_time
+        })
+    }
+    let whsObj = {"working_hours": whs}
+    let restObj = {
+        "cars": ds.cars,
+        "phone_number": ds.phone_number,
+        "email": ds.email,
+        "address": ds.address
+    }
+    Object.assign(jsonld, whsObj, restObj)
+    
+    return jsonld
 }
 
 app.listen(port, host, () => console.log(`Server running at http://${host}:${port}/api/v1/`))

@@ -5,6 +5,8 @@ block navbar
         span.sr-only (current)
     a.nav-item.nav-link.active(href="/datatable" , title="View data") View data
     if username
+        a.nav-item.nav-link(href="/profile" , title="Profile") Korisnički profil
+        a.nav-item.nav-link(href="/data" , title="Data") Osvježi preslike
         a.nav-item.nav-link(href="/logout" , title="Logout") Odjava
     else
         a.nav-item.nav-link(href="/login" , title="Login") Prijava

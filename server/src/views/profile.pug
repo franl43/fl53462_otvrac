@@ -1,0 +1,28 @@
+extends layout.pug
+
+
+
+block navbar
+    a.nav-item.nav-link(href="/", title="Home") Home
+        span.sr-only (current)
+    a.nav-item.nav-link(href="/datatable" , title="View data") View data
+    if username
+        a.nav-item.nav-link.active(href="/profile" , title="Profile") Korisnički profil
+        a.nav-item.nav-link(href="/data" , title="Data") Osvježi preslike
+        a.nav-item.nav-link(href="/logout" , title="Logout") Odjava
+    else
+        a.nav-item.nav-link(href="/login" , title="Login") Prijava
+
+block content
+    div.d-flex.flex-column.justify-content-center.align-items-start.font-weight-bold.m-2
+        ul 
+            li sid: #{user.sid}
+            li nickname: #{user.nickname}
+            li name: #{user.name}
+            li updated at: #{user.updated_at}
+            li email: #{user.email}
+            li email verified: #{user.email_verified}
+            li sub: #{user.sub}
+            li picture: 
+            img(src=`${user.picture}`, alt=`"${user.picture}"`)
+            
